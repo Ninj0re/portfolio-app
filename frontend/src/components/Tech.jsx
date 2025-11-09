@@ -64,6 +64,11 @@ const Tech = () => {
       id: 13,
       name: 'Jupyter',
       icon: '/tech-icons/jupyter.png',
+    },
+    {
+      id: 14,
+      name: 'Docker',
+      icon: '/tech-icons/docker.png',
     }
   ]
 

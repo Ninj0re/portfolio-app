@@ -2,69 +2,81 @@
 
 A modern, responsive portfolio website built with React, Vite, and TailwindCSS.
 
-## Features
-
-- 🎨 Modern and clean design
-- 📱 Fully responsive
-- ⚡ Fast performance with Vite
-- 🎯 Easy to customize
-- 🚀 Ready for AWS deployment
-
 ## Getting Started
 
+You can run this project in two ways: **locally with npm** or **with Docker**.
+
+---
+
+## Option 1: Run with npm (Development)
+
 ### Prerequisites
+- Node.js v16 or higher
+- npm
 
-- Node.js (v16 or higher)
-- npm or yarn
+### Steps
 
-### Installation
+1. **Navigate to the frontend directory:**
+   ```bash
+   cd frontend
+   ```
 
-1. Navigate to the frontend directory:
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open your browser:**
+   - Visit: `http://localhost:5173`
+   - Hot reload enabled for development
+
+5. **Stop the server:**
+   - Press `Ctrl + C` in the terminal
+
+### Build for Production (npm)
 ```bash
 cd frontend
-```
-
-2. Install dependencies:
-```bash
-npm install
-```
-
-3. Start the development server:
-```bash
-npm run dev
-```
-
-4. Open your browser and visit `http://localhost:5173`
-
-### Building for Production
-
-```bash
 npm run build
 ```
+- Built files will be in `frontend/dist/` directory
+- Optimized and minified for production
 
-The built files will be in the `dist` directory.
+---
 
-## Customization
+## 🐳 Option 2: Run with Docker (Production)
 
-### Update Your Information
+### Prerequisites
+- Docker
+- Docker Compose
 
-1. **Hero Section**: Edit `frontend/src/components/Hero.jsx`
-   - Update your name, title, bio
-   - Add your social media links
-   - Replace the profile initials
+### Steps
 
-2. **Projects**: Edit `frontend/src/components/Projects.jsx`
-   - Add your project details
-   - Place screenshots in `frontend/public/projects/`
-   - Update GitHub and live demo links
+1. **Build and start the container:**
+   ```bash
+   docker-compose up -d
+   ```
+   - `-d` runs in detached mode (background)
+   - First build may take 2-3 minutes
 
-3. **Footer**: Edit `frontend/src/components/Footer.jsx`
-   - Update contact information
-   - Customize footer content
+2. **Open your browser:**
+   - Visit: `http://localhost:3000`
+   - Served by Nginx in production mode
 
-### Add Project Screenshots
+3. **View logs (optional):**
+   ```bash
+   docker-compose logs -f
+   ```
+   - Press `Ctrl + C` to exit logs
 
-Place your project screenshots in `frontend/public/projects/` and update the image paths in `Projects.jsx`.
+4. **Stop the container:**
+   ```bash
+   docker-compose down
+   ```
 
 ## AWS Deployment (Future)
 
@@ -72,7 +84,3 @@ This project is structured to be easily deployed to AWS using:
 - **S3 + CloudFront** for static hosting
 - **Amplify** for continuous deployment
 - **EC2** with nginx for custom server setup
-
-## License
-
-MIT

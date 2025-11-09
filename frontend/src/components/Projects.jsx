@@ -8,7 +8,7 @@ const Projects = () => {
       description: 'A mobile app for virtual try-ons. The AI for this app is fal-ai/image-apps-v2/virtual-try-on. Developed with Flutter and Firebase. Also has Adapty plugin for in-app purchases.',
       mainImage: '/projects/fittly.png',
       technologies: ['Flutter', 'Firebase', 'Fal.ai', 'Adapty'],
-      imagesUrl: 'https://drive.google.com/drive/folders/1nq2RJOT2TtsRiI6SLA4N0gaLAMxIG31D?usp=sharing'
+      imagesUrl: 'https://drive.google.com/drive/folders/197ZcTIRW0AvTSjMwJwjMOKDSj4v5bL8o?dmr=1&ec=wgc-drive-globalnav-goto'
     },
     {
       id: 2,
